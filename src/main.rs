@@ -12,6 +12,6 @@ fn main() {
     let mut sorted_vec : Vec<_> = counter.iter().collect();
     sorted_vec.sort_unstable_by(|(ac,ai),(bc,bi)| bi.cmp(ai));
     for (c,i) in &sorted_vec {
-        println!("{:?}: {}",c,i);
+        println!("{:?},{}",c,i);
     }
 }
